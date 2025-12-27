@@ -25,24 +25,20 @@ To write a Python program that demonstrates **operator overloading** by overload
 ---
 
 ## 💻 Program
-class Fish:
-    def type(self):
-        print("fish")
-
-
-class Shark:
-    def type(self):
-        print("shark")
-
-
-obj_goldfish = Fish()
-obj_hammerhead = Shark()
-
-obj_goldfish.type()
-obj_hammerhead.type()
-
+class A:
+    def __init__(self,a):
+        self.a=a
+    def __lt__(self,other):
+        return self.a<other.a
+ob1=A(200)
+ob2=A(30)
+if(ob1<ob2):
+    print("ob1 is less than ob2")
+else:
+    print("ob2 is less than ob1")
+    
 ## Output
-<img width="839" height="289" alt="image" src="https://github.com/user-attachments/assets/084d3f7c-924c-4667-9582-ac2a0b913a63" />
+<img width="1177" height="268" alt="image" src="https://github.com/user-attachments/assets/e6815d5e-5b36-4940-85fc-2916f554f743" />
 
 ## Result
 Thus,the program is executed successfully.
